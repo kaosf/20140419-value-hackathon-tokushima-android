@@ -2,6 +2,7 @@
 .project
 .settings
 bin
+build.xml
 gen
 local.properties
 project.properties
