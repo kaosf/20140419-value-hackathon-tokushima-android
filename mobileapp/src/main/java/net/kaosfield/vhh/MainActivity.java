@@ -34,7 +34,7 @@ public class MainActivity extends ActionBarActivity
 
     private Fragment[] mFragments = {
         new LanguageSelectorFragment(),
-        PlaceholderFragment.newInstance(2),
+        new GuideFragment(),
         PlaceholderFragment.newInstance(3)
     };
 
