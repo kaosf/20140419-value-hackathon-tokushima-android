@@ -32,6 +32,12 @@ public class MainActivity extends ActionBarActivity
      */
     private CharSequence mTitle;
 
+    private Fragment[] mFragments = {
+        new LanguageSelectorFragment(),
+        PlaceholderFragment.newInstance(2),
+        PlaceholderFragment.newInstance(3)
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +58,7 @@ public class MainActivity extends ActionBarActivity
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.container, mFragments[position])
                 .commit();
     }
 
