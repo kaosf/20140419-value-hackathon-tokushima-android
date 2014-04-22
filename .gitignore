@@ -2,6 +2,7 @@
 /local.properties
 /.idea/workspace.xml
 .DS_Store
+*.iml
 
 # Created by http://www.gitignore.io
 
